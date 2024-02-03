@@ -1,0 +1,85 @@
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --background: hsl(234, 29%, 20%);
+  --CharcoalGrey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#image-container img {
+  max-height: 100%;
+  min-width: 100%;
+}
+
+#image-container {
+  height: 400px;
+}
+
+.container {
+  display: flex;
+  background-color: var(--White);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 700px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem 2rem 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--CharcoalGrey);
+}
+
+p {
+  margin: 1rem 0;
+}
+
+li {
+  margin: 0.8rem 0;
+  display: flex;
+  align-items: center;
+}
+
+li img {
+  margin-right: 1rem;
+}
+
+span {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
+}
+
+button {
+  background-color: var(--CharcoalGrey);
+  color: var(--White);
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--Tomato);
+}
